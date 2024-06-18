@@ -1,0 +1,358 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+
+
+.list-bg {
+  background: rgb(249, 250, 255);
+  padding: 10px;
+}
+
+.list-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 5px;
+  box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
+
+}
+
+.list-item h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.list-item p {
+  color: grey;
+  margin: 5px 0px;
+}
+
+.body {
+  margin: 0;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background: lightgray;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.titleWrap {
+  margin-top: 87px;
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #262626;
+
+}
+
+
+.contentWrap {
+  margin-top: 26px;
+  flex: 1;
+
+}
+
+.inputTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.inputWrap {
+  display: flex;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #e2e0c0;
+
+
+}
+
+.inputWrap:focus-within {
+  border: 1px solid #9e30f4;
+
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.errorMessageWrap {
+  margin-top: 8px;
+  color: #ef0000;
+  font-size: 12px;
+
+}
+
+.bottomButton {
+  width: 30%;
+  height: 48px;
+  border: none;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 64px;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+
+
+.bottomButton:disabled {
+  background-color: #dadada;
+  color: white;
+}
+
+.titlelogo {
+  width: 80px;
+  height: auto;
+  margin: auto;
+  display: block;
+
+}
+
+.page {
+  position: relative;
+  /* top:0;
+  bottom : 0; */
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
+  margin: 0 auto;
+  /* left:50%; */
+  /* transform : translate(-50%,0); */
+  /* min-height: 100vh; */
+
+  background-color: white;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.list-item {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.buttonDupConfirm {
+  padding: 10px 15px;
+  background: lightgray;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.errorMessageWrapID {
+  margin-top: 8px;
+  color: #ef0000;
+  font-size: 12px;
+  display: block;
+}
+
+.titleLogo {
+  width: 100px;
+  align-items: center;
+  flex: 1;
+}
+
+.errorMessageWrapEmail {
+  margin-top: 8px;
+  color: #ef0000;
+  font-size: 12px;
+  display: block;
+}
+
+.commentTitle {
+  font-size: 24px;
+  /* 원하는 크기로 설정 */
+  font-weight: bold;
+  /* 글씨를 굵게 설정 */
+  margin-bottom: 10px;
+  /* 아래에 여백 추가 */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.logoName {
+  margin-left: 8px;
+}
+
+.commentList {
+  opacity: 1;
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.deleteComment{
+  margin-left: 8px;
+}
+.commentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.commentContent {
+  flex-grow: 1;
+}
+.commentReactions {
+  display: flex;
+  gap: 10px;
+}
+.like, .hate {
+  cursor: pointer;
+}
+/* 공통 스타일 */
+.provider-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Kakao 스타일 */
+.provider-button.kakao {
+  background-color: yellow;
+  color: black;
+}
+
+/* Naver 스타일 */
+.provider-button.naver {
+  background-color: #2DB400;
+  color: #FFFFFF;
+}
+
+.provider-button.naver img {
+  margin-right: 8px;
+}
+
+/* Naver 다크모드 스타일 */
+@media (prefers-color-scheme: dark) {
+  .provider-button.naver {
+    background-color: #2DB400;
+    color: #FFFFFF;
+  }
+}
+
+
+.provider-image {
+  display: block;
+  width: 200px; /* 원하는 너비로 설정 */
+  height: auto; /* 비율에 따라 높이 자동 조정 */
+  margin: 10px 0;
+  cursor: pointer;
+}
+.Naverimage{
+  display: block;
+  width: 200px; /* 원하는 너비로 설정 */
+  height: auto; /* 비율에 따라 높이 자동 조정 */
+  margin: 10px 0;
+  cursor: pointer;
+}
+.Kakaoimage{
+  display: block;
+  width: 200px; /* 원하는 너비로 설정 */
+  height: auto; /* 비율에 따라 높이 자동 조정 */
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.loginButtonContainer{
+  display: flex;
+  gap: 165px;
+}
+.loginButtonWrapper{
+  flex: 1;
+}
+.img-container {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-container img {
+  width: 500px; /* 원하는 이미지 너비 설정 */
+  height: auto; /* 높이 자동 조정 */
+  margin: 20px; /* 이미지 사이 간격 설정 */
+}
+.main-market {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* 여백 조절 */
+}
+
+.list-bg {
+  padding: 1rem;
+}
+
+
